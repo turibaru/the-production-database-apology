@@ -5,6 +5,10 @@
 // dalam batas 200 karakter, lalu salin isinya persis apa adanya ke
 // folder output yang diminta. Tidak ada yang diedit, tidak ada yang
 // ditambah, tidak ada jaringan yang disentuh.
+// Program ini tidak pernah mengarang teks sendiri: ia hanya mengantar
+// satu baris yang sudah ditulis penulisnya, dari sumber ke tujuan,
+// tanpa mengubah isinya. Baris yang kepanjangan ditolak sebelum
+// ada yang dibuat, dan kegagalan apa pun dihentikan dengan pesan jelas.
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
